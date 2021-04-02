@@ -1,0 +1,63 @@
+/* выбрать  палитру
+#212121  черный вторичный 
+#2196F3 голубой  ссылки  кнопка
+#757575  серый -  основной  
+#FFFFFF  белый Н1 и   цвет фона основной
+#000000  черный  логотип
+rgba(255, 255, 255, 0.6)  контакты  футер 
+#F5F4FA   фон  нижний 
+#2F303A  цвет фон героя и футера
+
+ */
+:root {
+  --primary-text-color: #757575;
+  --first-accent-color: #2196f3;
+  --title-color: #212121;
+  --second-accent-color: #ffffff;
+}
+body {
+  background-color: var(--second-accent-color);
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  color: var(--title-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--first-accent-color);
+}
+.site-nav .link.current {
+  color: var(--first-accent-color);
+}
+.contacts .link {
+  color: var(--primary-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--first-accent-color);
+}
+/* поменять фон хедера */
+/* hero    */
+.hero-title {
+  color: var(--second-accent-color);
+}
+/* section */
+.section-title {
+  color: var(--title-color);
+}
+.title {
+  color: var(--title-color);
+}
+.button {
+  color: var(--second-accent-color);
+  background-color: var(--first-accent-color);
+}
+.section.team {
+  background-color: #f5f4fa;
+}
+.list-item {
+  background-color: var(--second-accent-color);
+}
